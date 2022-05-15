@@ -58,7 +58,7 @@ body {
     top: 550px;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 400px) {
     .container {
         position: absolute;
         background-color: #205375;
