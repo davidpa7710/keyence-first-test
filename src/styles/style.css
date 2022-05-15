@@ -1,34 +1,39 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     background-color: #112B3C;
     font-family: Arial, Helvetica, sans-serif;
 }
-.container{
+
+.container {
     position: absolute;
-    background-color: #205375 ;
+    background-color: #205375;
     width: 600px;
     height: 300px;
     display: flex;
     text-align: center;
-    align-items:center;
-    justify-content:space-around;
+    align-items: center;
+    justify-content: space-around;
     margin: 200px 400px;
 }
-.container h2{
+
+.container h2 {
     position: absolute;
     top: 80px;
     color: #EFEFEF;
 }
-.text-container{
+
+.text-container {
     width: 400px;
     height: 30px;
     margin-right: 0px;
 }
-.list-container{
+
+.list-container {
     width: 600px;
     background-color: #205375;
     display: grid;
@@ -39,14 +44,53 @@ body{
     left: 400px;
     padding: 20px;
 }
-.list-contain{
+
+.list-contain {
     color: #EFEFEF;
 }
-.footer{
+
+.footer {
     color: #EFEFEF;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     top: 550px;
+}
+
+@media (max-width: 375px) {
+    .container {
+        position: absolute;
+        background-color: #205375;
+        width: 300px;
+        height: 500px;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: space-around;
+        margin: 40px 40px;
+    }
+
+    .container h2 {
+        position: absolute;
+        top: 80px;
+        color: #EFEFEF;
+    }
+
+    .text-container {
+        width: 250px;
+        height: 40px;
+    }
+
+    .list-container {
+        position: absolute;
+        background-color: #205375;
+        width: 300px;
+        top: 320px;
+        left: 40px;
+    }
+
+    .list-contain {
+        color: #EFEFEF;
+    }
 }
