@@ -1,8 +1,9 @@
 var input = document.querySelector('.text-container')
-var btn = document.querySelector('.btn-container')
 var emtpyText = document.querySelector('.simple-text')
 var formulario = document.querySelector('.formulario')
 var lista = document.querySelector('.list-contain')
+
+input.focus()
 
 
 function validar() {
@@ -12,13 +13,13 @@ function validar() {
     }
     else {
         if (emtpyText.textContent === '') {
-            emtpyText.textContent = `Usted ingreso el texto: ${userInput}`
-            console.log(' el elemento no esta ocupado');
+            emtpyText.textContent = `${userInput}`
+            document.getElementsByClassName("text-container")[0].value = "";
         } else {
             var li = document.createElement('li')
-            li.textContent = `Usted ingreso otro texto: ${userInput}`
+            li.textContent = `${userInput}`
             lista.insertAdjacentElement('afterbegin', li)
-            console.log(' el elemento esta ocupado se inserto en otro elemento');
+            document.getElementsByClassName("text-container")[0].value = "";
         }
     }
 
@@ -37,6 +38,6 @@ window.addEventListener('keydown', keyPress)
 
 
 
-btn.addEventListener('click', validar)
+
 
 

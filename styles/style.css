@@ -8,7 +8,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 .container{
-    position: fixed;
+    position: absolute;
     background-color: #205375 ;
     width: 600px;
     height: 300px;
@@ -19,8 +19,8 @@ body{
     margin: 200px 400px;
 }
 .container h2{
-    position: fixed;
-    top: 280px;
+    position: absolute;
+    top: 80px;
     color: #EFEFEF;
 }
 .text-container{
@@ -28,26 +28,17 @@ body{
     height: 30px;
     margin-right: 0px;
 }
-.btn-container{
-    margin-right: 50px;
-    width: 100px;
-    height: 35px;
-    border-radius: 10px;
-    border: none;
-    font-size: 18px;
-    background-color: #F66B0E;
-    color: #EFEFEF;
-}
-.btn-container:hover{
-    width: 105px;
-    height: 32px;
-    background-color: #112B3C;
-    color: #EFEFEF;
-    cursor: pointer;
-    transition: .5s;
-    border-radius: 10px;
+.list-container{
+    width: 600px;
+    background-color: #205375;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    position: relative;
+    top: 400px;
+    left: 400px;
+    padding: 20px;
 }
 .list-contain{
     color: #EFEFEF;
-    list-style: circle;
 }
