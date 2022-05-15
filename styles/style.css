@@ -42,3 +42,11 @@ body{
 .list-contain{
     color: #EFEFEF;
 }
+.footer{
+    color: #EFEFEF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 550px;
+}
